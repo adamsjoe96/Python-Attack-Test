@@ -78,6 +78,7 @@ def main():
     group.add_option('-U', '--file-user', type='string', dest='fileus', help="Specify a file that contains User, that will be tested")
     group.add_option('-X', '--file-host', type='string', dest='filehos', help="Specify a file that contains Host, that will be tested")
     group.add_option('-P', '--file-pass', type='string', dest='filepass', help="Specify a file that contains Password, that will be tested")
+    parser.add_option_group(group)
     (options, args)=parser.parse_args()
     tgHost = options.tgHost
     user= options.user
