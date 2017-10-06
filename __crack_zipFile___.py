@@ -34,6 +34,7 @@ def main():
             if ok == False:
                 t = Thread(target=extractPass, args=(zfile, lines))
                 t.start()
+                t.join()
             else:
                 exit(0)
     except Exception, e:
