@@ -5,6 +5,10 @@ import sys
 from threading import Thread
 import optparse
 
+print "------------------------------------------------------------------------------------"
+print "-----------<<<<<<<<<<<<<<<<<<<<<MADE BY JACK THE DOUGHT>>>>>>>>>>>>>>>>>------------"
+print "------------------------------------------------------------------------------------"
+
 ok = False
 def extractPass(zfil, passwd):
         try:
